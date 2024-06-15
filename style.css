@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: "Roboto", sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+.header {
+    height: 76px;
+    background-color: #2E933C;
+    width: 100%;
+
+    padding: 8px;
+
+    display: flex;
+    justify-content: space-between;
+
+	color: #FFFFFF;
+}
+
+.header div{
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+	gap: 8px;
+}
+
+.profile-picture{
+	max-height: 50px;
+	width: 50px;
+
+	border-radius: 50%;
+
+	background-color: #FFFFFF;
+}
+
+
+.user-side{
+	transition: 0.3s ease;
+    padding: 0 8px;
+	cursor: pointer;
+    border-radius: 10px;
+}
+
+.user-side:hover{
+	background-color: #207045;
+}
+
+.arranchamento{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #0A0908;
+}
+
+.user{
+    color: #0A0908;
+}
+
+.container{
+	padding: 20px;
+    align-items: center;
+}
+
+.arranchamento-form {
+	display: flex;
+	gap: 8px;
+
+	margin: 24px 0;
+}
+
+.calendar{
+    padding: 10px;
+	outline: none;
+	border-radius: 8px;
+	border: none;
+
+	background-color: #F5F5F5;
+}
+
+.arranchamento-form div{
+    display: flex;
+    align-items: center;
+}
+
+.confirm{
+	transition: 0.2s ease;
+	cursor: pointer;
+    margin-left: 15px;
+    background-color: #2E933C;
+    border: none;
+    border-radius: 8px;
+    color: #0A0908;
+    font-weight: 400;
+    padding: 10px 16px;
+}
+
+.confirm:hover{
+    background-color: #207045;
+}
+
+.my-arrangements{
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.my-arrangements h2 {
+	color: #207045;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.chip {
+	color: #204E4A;
+	background-color: #CCF3D1;
+	text-align: center;
+
+	padding: 2px 12px;
+
+	border-radius: 6px;
+
+	display: inline-block;
+}
+
+#card-list{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+}
+
+.card {
+	padding: 12px;
+	background-color: #F5F5F5;
+	border-radius: 16px;
+
+	width: 400px;
+}
+
+.card-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.meals{
+	width: 100%;
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+}
+
+.meal-chip{
+	color: #204E4A;
+	background-color: #CCF3D1;
+}
+
+.card-header .delete {
+	padding: 5px;
+	border-radius: 4px;
+	color: #DF1830;
+	background-color: #FFC6CD;
+}

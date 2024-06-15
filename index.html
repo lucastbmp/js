@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Arranchamento Online</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div>
+            <img class="brasao" height="60px" width="48px" src="./assets/2 bi amv.png" alt="Brasão do Segundo Batalhão de Infantaria Aeromóvel">
+            <h1 class="arranchamento">Arranchamento Online</h1>
+        </div>
+        <div class="user-side">
+            <p class="user">3º Sgt Lorem Ipsum</p>
+            <div class="profile-picture"></div>
+        </div>
+    </header>
+    <main class="container">
+        <form class="arranchamento-form">
+            <input class="calendar" required placeholder="data inicial" type="date">
+            <input class="calendar" placeholder="data final (opcional)" type="date">
+            <div>
+                <input type="checkbox"id="cafe-da-manha">
+                <label for="cafe-da-manha">Café da manhã</label>
+            </div>
+            
+            <div>
+                <input required type="checkbox"id="almoco">
+                <label for="almoco">Almoço</label>
+            </div>
+            
+            <div>
+                <input type="checkbox"id="janta">
+                <label for="janta">Janta</label>
+            </div>
+            
+            <div>
+                <input type="checkbox"id="ceia">
+                <label for="ceia">Ceia</label>
+            </div>
+
+            <button class="confirm">Confirmar</button>
+        </form>
+        <section>
+            <div class="my-arrangements">
+                <h2>Meus Arranchamentos</h2>
+                <span class="material-symbols-outlined">restaurant</span>
+                <span #arrangements-counter class="chip">0</span>
+            </div>
+            
+            <ul id="card-list">
+                <!-- CARD -->
+                <div class="card">
+                    <!-- DATA E BOTÃO DE DELEÇÃO -->
+                    <div class="card-header">
+                        <span>01/01/2024</span>
+                        <span class="delete material-symbols-outlined">
+                            delete
+                        </span>
+                    </div>
+                    <!-- LISTA DE REFEIÇÕES -->
+                    <div class="meals">
+                        <span class="meal-chip">Café da manhã</p> 
+                        <span class="meal-chip">Almoço</p>
+                        <span class="meal-chip">Janta</p>
+                        <span class="meal-chip">Ceia</p>
+                    </div>
+                </div>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
